@@ -1,0 +1,48 @@
+// ==========================================================================
+// Accordion Menu
+// ==========================================================================
+
+.breakdown {
+	max-width: 75%;
+	padding-bottom: 2rem;
+}
+
+.accordion {
+	max-width: 75%;
+	border-top: 1px solid palette(grey);
+	display: block;
+	
+	@include e(heading) {
+		text-align: left;
+		
+		a{
+			position: relative;
+			margin-right: 1rem;
+		}
+		
+		a, 
+		h3 {
+			display: inline-block;
+		}
+	}
+	
+	@include e(description) {
+		display: block;
+		padding-bottom: 2rem;
+	}
+}
+
+/*
+.hidden {
+	display: none;
+}
+*/
+
+.plus {
+	font-size: 1.5rem;
+}
+
+.cross {
+	top: 10px;
+	font-size: 2rem;
+}

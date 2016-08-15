@@ -1,0 +1,97 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.main-header {
+	height: 100%;
+}
+
+.slider {
+	position: relative;
+ 	overflow: hidden;
+    height: 100%;
+}
+
+.slider #slide-1,
+.slider #slide-2 {
+	transition: transform .6s ease-out;
+}
+
+#slide-1 {
+	background-image: url('../img/hokage.png');
+	background-color: palette(grey, light);
+	background-blend-mode: overlay;
+}
+
+#slide-2 {
+	background-image: url('../img/chicago.jpg');
+	background-color: palette(grey, light);
+	background-blend-mode: overlay;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+    transform: translateX(100%);
+
+}
+
+/*
+.slider:hover {
+	
+	#slide-1 {
+		transform: translateX(-100%);
+	}
+	
+	#slide-2 {
+		transform: translateX(0);
+	}
+
+}
+*/
+
+.hero {
+	padding-top: em(24px);
+	background-position: center;
+	height: 100%;
+	
+	@include mq(small) {
+		padding-bottom: 7em;
+	}
+	
+	@include e(callout) {
+		position: relative;
+		top: 45%;
+		z-index: 500;
+		text-align: center;
+		
+		@include m(heading) {
+			color: white;
+			font-size: $large__font-size;
+		}
+		
+		@include m(text) {
+			font-weight: $font-weight--bold;
+			
+			@include mq(large) {
+				padding-left: 5em;
+				padding-right: 5em;
+			}
+		}
+		
+		@include m(button) {
+			background: transparent;
+			border-color: white;
+			
+			:hover {
+				color: $grey;
+				transition:  color .5s;
+			}
+			
+			a {
+				color: white;
+				padding: em(24px);
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+// ==========================================================================
+// Alumni Spotlight
+// ==========================================================================
+
+#admission,
+#news-slide,
+#alumni-spotlight-slide {
+	opacity: 0;
+	left: 100%;
+	position: relative; 
+}
+
+#admission, #alumni-spotlight-slide {
+	left: 100%;
+}
+
+#news-slide {
+	left: -100%;
+}
+
+

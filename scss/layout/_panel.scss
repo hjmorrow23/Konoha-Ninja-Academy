@@ -1,0 +1,58 @@
+// ==========================================================================
+// Panel
+// ==========================================================================
+
+.panel {
+  @extend %panel-default;
+  
+  @include m(centered) {
+    @extend %panel-default;
+    @extend %center-align;    
+  }
+  
+  @include m(padded) {
+    @extend %panel-padding;
+    
+    @include m(centered) {
+      @extend %center-align;
+	    @extend %panel-padding;
+    }
+  }
+}
+
+.text {
+	height: auto;
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	
+	@include e(section) {
+		width: 100%;
+		display: block;
+		
+		@include m(item) {
+			width: 33%;
+			display: inline-block;
+			padding: em(60px) em(32px);
+			
+			img {
+				@extend %list;
+			}
+
+			
+			@include mq(small) {
+				display: block;
+				width: 100%;
+				padding: em(32px) 
+			}
+
+			
+		}
+		
+	}
+	
+	@include e(about) {
+		padding-bottom: 5rem;
+	}
+}

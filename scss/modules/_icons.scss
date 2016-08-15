@@ -1,0 +1,70 @@
+// ==========================================================================
+// Icons
+// ==========================================================================
+
+//Logo
+
+.logo {
+	display: inline-block;
+	padding-top: em(25px);
+	margin-left: em(30px);
+	margin-bottom: em(1px);	
+	text-align: center;
+	
+	a  {
+	    width: 100%;
+	}
+	
+	img {
+		@extend %logo;
+	}
+	
+	@include mq(small) {
+		display: block;
+		margin-left: 0;
+	}
+}
+
+
+
+// UI
+/*
+
+.icon {
+	width: em(25px);
+	height: em(17px);
+	border-top: solid 3px palette(grey);
+	border-bottom: solid 3px palette(grey);
+	position: relative;
+	
+}
+*/
+
+/*
+.icn__wrapper {
+	display: inline-block;
+	height: 100%;
+	float: right;
+}
+*/
+
+
+.icn {
+
+	// Nav Toggle
+	@include m(nav-toggle) {
+		@extend %icn--ui;
+		width: em(25px);
+		height: em(17px);
+		border-top: solid 3px palette(grey);
+		border-bottom: solid 3px palette(grey);
+		position: relative;
+		@extend .centered;
+		margin-bottom: em(16px);
+		
+		@include p-el(before, 25px, 3px) {
+			background: palette(grey);
+			top: 4px;
+		}
+	}
+}

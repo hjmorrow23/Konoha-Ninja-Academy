@@ -1,0 +1,61 @@
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+.top-bar {
+	background-color: palette(black, light);
+	position: absolute;
+	z-index: 1000;
+}
+
+.navbar {	
+	@extend .centered;
+	margin-left: 0;
+	margin-right: 0;
+	position: relative;
+	display: block;
+/*
+	@include mq(medium) { 
+		margin-top: em(54px);
+		margin-bottom: 0;
+	}
+*/
+
+	@include mq(medium) {
+		float:right;
+	}
+	
+}
+
+.nav {
+	margin-top: em(20px);
+	margin-bottom: em(30px);
+	
+  @include e(item) {
+    @extend %nav-item-horz;
+    a {
+      @extend %nav-item-link;
+      color: palette(grey);
+      &:hover {
+        @extend %nav-item-on;
+      }
+    }
+    @include m(current) {
+      @extend %nav-item-horz;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }    
+    }
+  }
+}
+
+#no-border {
+	@include mq(small) {
+		border: none;
+		padding-bottom: 0;
+	} 
+}
+
+
+
