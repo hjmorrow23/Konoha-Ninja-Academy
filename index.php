@@ -12,7 +12,10 @@ $pageHeadingLinkUrl = "enroll.php";
 	
 include("inc/header.php");	
 ?>
+	<!-- Body Content -->
 	<main>
+		
+		<!-- Admissions Section -->
 		<section class="panel--padded--centered text">
 			<div id="admission"> 
 				<h1 class="centered">Admission Requirements</h1>
@@ -23,6 +26,8 @@ include("inc/header.php");
 				</div>
 			</div>
 		</section>
+		
+		<!-- News Section -->
 		<section class="panel--padded--centered text" id="news">
 			<div id="news-slide">
 				<a href="news.php"><h1>News</h1></a>
@@ -54,6 +59,8 @@ include("inc/header.php");
 				</div>
 			</div>		
 		</section>
+		
+		<!-- Alumni Section -->
 		<section class="panel--padded--centered text alumni">
 			<div id="alumni-spotlight-slide">
 				<h1>Alumni Spotlight</h1>

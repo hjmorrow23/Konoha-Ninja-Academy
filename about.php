@@ -10,7 +10,10 @@ $pageHeading = "Why Choose KNA?";
 	
 include("inc/header.php");	
 ?>
+	<!-- Body Content -->
 	<main>
+		
+		<!-- Body Content -->
 		<section class="panel--padded--centered text">
 			<div class="text__about">
 				<h1>Accolades</h1>

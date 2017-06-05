@@ -10,7 +10,10 @@ $pageHeading = "Who monitors your student's learning?";
 	
 include("inc/header.php");	
 ?>
+	<!-- Body Content -->
 	<main>
+		
+		<!-- Faculty Section -->
 		<section class="panel--padded--centered text">
 			<div class="text__about">
 				<div><img src="img/sandaime.png" id="sandaime"/></div>

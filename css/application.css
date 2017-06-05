@@ -557,7 +557,7 @@ footer {
     background: #797e83;
     top: 4px; }
 
-footer img, .logo img, .symbol__row img {
+footer img, .logo img {
   height: 4em;
   width: 4em; }
 
@@ -672,6 +672,7 @@ footer img, .logo img, .symbol__row img {
 .symbol {
   background-color: #ebecec; }
   .symbol__row img {
+    height: 4rem;
     display: inline-block;
     padding-left: 1em;
     padding-right: 1em; }

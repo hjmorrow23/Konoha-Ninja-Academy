@@ -9,10 +9,14 @@ $pageHeading = "KNA Current Events";
 include("inc/header.php");	
 ?>
 	<main>
+		
+		<!-- News Section -->
 		<section class="panel--padded--centered text">
 			<div>
 				<h1>News</h1>
 				<div class="grid news-text">
+					
+					<!-- News Generation Function -->
 					<?php $article = array_news_category($news);
 			            foreach ($article as $id) {
 			                echo get_news_html($id,$news[$id]);

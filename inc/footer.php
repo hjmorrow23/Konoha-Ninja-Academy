@@ -1,3 +1,4 @@
+	<!-- Clan Icon Row -->
 	<section class="panel--padded--centered text symbol">
 			<div class="symbol__row">
 				<img src="img/senju.svg" alt="Senju Clan" id="senju" />
@@ -11,7 +12,9 @@
 			</div>	
 		</section>
 	</main>
-<footer>
+	
+	<!-- Footer Section -->
+	<footer>
 		<a href="index.html"><img src="img/leaf-village-symbol.svg" alt="Leaf Symbol"/></a>
 		<nav>
 			<ul>
@@ -38,7 +41,7 @@
 			</ul>
 	</nav>
 	</footer>
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>

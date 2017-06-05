@@ -1,8 +1,4 @@
 <?php 
-/*
-include("inc/project-data.php");
-include("inc/functions.php");
-*/
 	
 $pageTitle = "Curriculum";
 $pageHeading = "How are students prepared for life as a Shinobi?";
@@ -10,9 +6,14 @@ $pageHeading = "How are students prepared for life as a Shinobi?";
 	
 include("inc/header.php");	
 ?>
+	<!-- Body Content -->
 	<main>
+		
+		<!-- Curriculum Section -->
 		<section class="panel--padded--centered text">
 			<div>
+				
+				<!-- Curriculum Accordian -->
 				<h1>Curriculum Breakdown</h1>
 				<p class="breakdown centered">Our instructors will follow a proven curriculum that will guide your child through the necessary steps to mastering the different types of Jutsus and base chakra control through the following areas:</p>
 				<div class="accordion centered">

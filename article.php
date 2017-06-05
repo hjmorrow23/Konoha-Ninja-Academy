@@ -20,9 +20,14 @@ $pageHeading = $item['title'];
 include('inc/header.php'); 
 ?>
 
+<!-- Body Content -->
 <main>
+	
+	<!-- Article Section -->
 	<section class="panel--padded--centered text">
-		<div class="article centered">		
+		<div class="article centered">
+					
+			<!-- Article Data Generation Function -->
 			<?php $article = array_news_category($news);
 	            if ($id) {
 	                echo get_full_news_html($id,$news[$id]);
